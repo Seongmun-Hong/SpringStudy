@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<bean id="bookService"-->
+          <!--class="com.springstudy.springapplicationcontext.BookService">-->
+        <!--<property name="bookRepository" ref="bookRepository"/>-->
+        <!--name="bookRepository" 이부분에서 bookRepository는 setter에서 가져옴-->
+        <!--ref="bookRepository" 이부분에서 bookRepository는 bean id 에서 가져옴-->
+    <!--</bean>-->
+
+    <!--<bean id="bookRepository"-->
+          <!--class="com.springstudy.springapplicationcontext.BookRepository">-->
+    <!--</bean>-->
+    <!--이러한 방법은 번거롭다 따라서 나온 방법은 아래와 같다.-->
+
+    <!--<context:component-scan base-package="com.springstudy.springapplicationcontext"/>-->
+    <!--Spring 2.5부터 가능했던 기능으로 bask-package에서부터 @Component 혹은 Component를 상속받은 -->
+    <!--Repository, Service 등의 어노테이션을 찾아 빈으로 등록한다.-->
+</beans>
